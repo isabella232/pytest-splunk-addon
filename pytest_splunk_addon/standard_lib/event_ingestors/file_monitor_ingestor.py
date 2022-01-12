@@ -45,6 +45,9 @@ class FileMonitorEventIngestor(EventIngestor):
     """
 
     def __init__(self, required_configs):
+        LOGGER.info('============================')
+        LOGGER.info(required_configs)
+        LOGGER.info('=============================')
         self.uf_host = required_configs.get("uf_host")
         self.uf_port = required_configs.get("uf_port")
         self.uf_username = required_configs.get("uf_username")

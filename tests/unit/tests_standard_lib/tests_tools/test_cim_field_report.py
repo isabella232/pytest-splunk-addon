@@ -1,7 +1,6 @@
 import pytest
 from pytest_splunk_addon.tools import cim_field_report
 
-
 @pytest.mark.parametrize(
     "data, records, expected",
     [
